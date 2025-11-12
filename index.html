@@ -5,95 +5,130 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RAKHMATILLAYEV BLOG</title>
   <style>
+    /* 🔷 Umumiy sahifa dizayni */
     body {
-      background: 
-        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-        url('orqafon.jpg') no-repeat center center fixed;
-      background-size: cover;
-      color: white;
-      text-align: center;
-      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+      background: 
+        linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.85)),
+        url('orqafon.jpg') no-repeat center center fixed;
+      background-size: cover;
+      overflow-x: hidden;
+    }
+
+    /* 🔹 Profil konteyner */
+    .container {
+      max-width: 500px;
+      margin: 80px auto;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.6);
+      border: 1px solid rgba(191, 255, 0, 0.2);
+      border-radius: 25px;
+      box-shadow: 0 0 25px rgba(191, 255, 0, 0.25);
+      padding: 40px 20px;
+      backdrop-filter: blur(10px);
     }
 
     img {
-      width: 150px;
-      height: 150px;
+      width: 160px;
+      height: 160px;
       border-radius: 50%;
       border: 4px solid #bfff00;
-      margin-top: 40px;
       box-shadow: 0 0 20px #bfff00;
     }
 
+    /* 🎧 Musiqa player (qora fon) */
+    .player-box {
+      background: rgba(0, 0, 0, 0.9);
+      border: 1px solid #bfff00;
+      border-radius: 15px;
+      padding: 10px;
+      width: 85%;
+      margin: 25px auto;
+      box-shadow: 0 0 20px #bfff00;
+    }
+
+    audio {
+      width: 100%;
+      filter: brightness(0.85);
+    }
+
     h1 {
-      margin-top: 20px;
       color: #bfff00;
-      text-shadow: 0 0 10px #bfff00;
+      font-size: 28px;
+      margin-top: 25px;
+      text-shadow: 0 0 20px #bfff00;
     }
 
     p {
-      color: #ccc;
+      color: #ddd;
       font-size: 16px;
       margin-bottom: 30px;
     }
 
+    /* 🔗 Tugmalar */
     a {
       display: block;
-      background-color: #bfff00;
+      background: linear-gradient(135deg, #bfff00, #9fff00);
       color: #000;
       width: 250px;
-      margin: 10px auto;
-      padding: 12px;
-      border-radius: 25px;
+      margin: 12px auto;
+      padding: 14px;
+      border-radius: 30px;
       font-weight: bold;
       text-decoration: none;
-      transition: 0.3s;
+      transition: 0.3s ease;
+      box-shadow: 0 0 10px #bfff00;
     }
 
     a:hover {
-      background-color: #dfff40;
       transform: scale(1.05);
+      box-shadow: 0 0 25px #dfff40;
+    }
+
+    /* 👁 Foydalanuvchi soni */
+    #counter {
+      margin-top: 25px;
     }
 
     footer {
-      color: #00bfff;
-      font-size: 14px;
       margin-top: 40px;
-      padding-bottom: 20px;
-    }
-
-    /* Foydalanuvchi soni uchun */
-    #counter {
-      margin-top: 20px;
+      color: #bfff00;
+      font-size: 14px;
+      text-shadow: 0 0 8px #bfff00;
     }
   </style>
 </head>
 <body>
 
-  <img src="shrahmatillayev.jpg" alt="Profil rasmi">
+  <div class="container">
+    <img src="shrahmatillayev.jpg" alt="Profil rasmi">
 
-  <!-- 🎵 Qo‘shiq -->
-  <audio controls autoplay loop>
-    <source src="musiqasayt.mp3" type="audio/mpeg">
-    Sizning brauzeringiz audio faylni qo‘llab-quvvatlamaydi.
-  </audio>
+    <!-- 🎵 Qora fonli player -->
+    <div class="player-box">
+      <audio controls autoplay loop>
+        <source src="musiqasayt.mp3" type="audio/mpeg">
+        Sizning brauzeringiz audio faylni qo‘llab-quvvatlamaydi.
+      </audio>
+    </div>
 
-  <h1>RAKHMATILLAYEV BLOG</h1>
-  <p>My brend offers perfect and modern websites for your business.</p>
+    <h1>RAKHMATILLAYEV BLOG</h1>
+    <p>Perfect and modern websites for your business — by RAHMATILLAYEV SHUXRATILLO</p>
 
-  <a href="https://instagram.com/sh.rahmatillayev" target="_blank">Instagram</a>
-  <a href="tel:+998945057307">+998 94 505 73 07</a>
-  <a href="https://t.me/rahmatillayevfx" target="_blank">Telegram</a>
-  <a href="https://t.me/shrahmatillayev" target="_blank">Telegram channel</a>
+    <a href="https://instagram.com/sh.rahmatillayev" target="_blank">Instagram</a>
+    <a href="tel:+998945057307">📞 +998 94 505 73 07</a>
+    <a href="https://t.me/rahmatillayevfx" target="_blank">Telegram</a>
+    <a href="https://t.me/shrahmatillayev" target="_blank">Telegram channel</a>
 
-  <!-- 👀 Foydalanuvchi soni -->
-  <div id="counter">
-    <img src="https://visitor-badge.laobi.icu/badge?page_id=shrahmatillayev.github.io" alt="Visitor count">
+    <!-- 👁 Foydalanuvchi soni -->
+    <div id="counter">
+      <img src="https://visitor-badge.laobi.icu/badge?page_id=shrahmatillayev.github.io" alt="Visitor count">
+    </div>
+
+    <footer>©2025-2026 RAKHMATILLAYEV BLOG | RAHMATILLAYEV SHUXRATILLO</footer>
   </div>
-
-  <footer>©2026 RAKHMATILLAYEV BLOG | RAHMATILLAYEV SHUXRATILLO</footer>
 
 </body>
 </html>
-
