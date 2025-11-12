@@ -11,9 +11,7 @@
       padding: 0;
       font-family: 'Poppins', sans-serif;
       color: #fff;
-      background: 
-        linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.55)), /* oldingi 0.65–0.85 o‘rniga */
-        url('orqafon.jpg') no-repeat center center fixed;
+      background: url('orqafon.jpg') no-repeat center center fixed;
       background-size: cover;
       overflow-x: hidden;
     }
@@ -23,12 +21,12 @@
       max-width: 500px;
       margin: 80px auto;
       text-align: center;
-      background: rgba(0, 0, 0, 0.5); /* 0.6 → 0.5 qildik */
+      background: rgba(0, 0, 0, 0.25); /* juda engil qoramtir, shaffof */
       border: 1px solid rgba(191, 255, 0, 0.25);
       border-radius: 25px;
       box-shadow: 0 0 25px rgba(191, 255, 0, 0.25);
       padding: 40px 20px;
-      backdrop-filter: blur(8px);
+      backdrop-filter: blur(4px); /* orqa fonni engil yumshatadi */
     }
 
     img {
@@ -39,9 +37,9 @@
       box-shadow: 0 0 20px #bfff00;
     }
 
-    /* 🎧 Musiqa player (qora fon) */
+    /* 🎧 Musiqa player */
     .player-box {
-      background: rgba(0, 0, 0, 0.85);
+      background: rgba(0, 0, 0, 0.7); /* qora player qoldi */
       border: 1px solid #bfff00;
       border-radius: 15px;
       padding: 10px;
@@ -66,6 +64,7 @@
       color: #eee;
       font-size: 16px;
       margin-bottom: 30px;
+      text-shadow: 0 0 10px #000;
     }
 
     /* 🔗 Tugmalar */
@@ -106,7 +105,7 @@
   <div class="container">
     <img src="shrahmatillayev.jpg" alt="Profil rasmi">
 
-    <!-- 🎵 Qora fonli player -->
+    <!-- 🎵 Musiqa player -->
     <div class="player-box">
       <audio controls autoplay loop>
         <source src="musiqasayt.mp3" type="audio/mpeg">
@@ -127,7 +126,7 @@
       <img src="https://visitor-badge.laobi.icu/badge?page_id=shrahmatillayev.github.io" alt="Visitor count">
     </div>
 
-    <footer>© 2025-2026 RAKHMATILLAYEV BLOG | RAHMATILLAYEV SHUXRATILLO</footer>
+    <footer>© 2025–2026 RAKHMATILLAYEV BLOG | RAHMATILLAYEV SHUXRATILLO</footer>
   </div>
 
 </body>
